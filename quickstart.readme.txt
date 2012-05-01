@@ -1,0 +1,17 @@
+Before using standalone quickstart drush
+
+1) Add mysql to your path:
+	- For bash:
+		echo 'export PATH=/path/to/mysql/bin:$PATH' >> ~/.bash_profile
+	- For zsh:
+		echo 'export PATH=/path/to/mysql/bin:$PATH' >> ~/.zshrc
+	
+Note: If you are running MAMP your mysql/bin will be located at /Applications/MAMP/Library/bin/mysql
+
+2) Modify apache (if using mac):
+	1) Create a folder called sites-available in /etc/apache2/
+	2) Modify httpd.conf and add this line:
+		Include /etc/apache2/sites-available/
+		
+Note: same goes for MAMP here, your apache config will reside in a different place	
+
